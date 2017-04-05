@@ -1,0 +1,166 @@
+/*normalizeCSS*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css);
+body{
+    background:#4974A4;
+}
+
+
+
+.container{
+    display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.logo{
+    height: 85px;
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    bottom:-20px;
+    text-align: center;   
+    background:#fff;
+}
+.logo img{
+    margin-top: 15px;
+}
+.mainContent{
+    height: 375px;
+    width: 960px;
+    border-radius: 10px;
+    background:#fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top:40px;
+}
+.mainContent-L{
+    float: left;
+    margin-left: 4%;
+}
+.mainContent-L img{
+    border-radius: 5px;
+}
+.mainContent-R{
+    float: right;
+    margin-right: 4%;
+    width: 330px;
+    text-align: center;
+}
+.mainContent-R h2{
+    margin:0;
+    font:normal 36px/0.9 'Microsoft YaHei','微软雅黑',sans-serif;
+    color:#1C408C;
+}
+.roleOption{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.roleOption label{
+    padding-left: 20px;
+}
+.roleOption input{
+	outline: none;
+}
+.roleOption span{
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+/* 浮动元素的水平居中 */
+/* 父级元素 */
+.infoInput{
+    width: auto;
+    height:110px;
+    border:1px solid #ccc;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+}
+/* 包装纸 */
+.infoInput .wraper{
+    float: left;
+    position: relative;
+    left: 50%;
+    clear:both;
+}
+/* 子级元素：真正需要居中的元素 */
+.infoInput .child{
+    position: relative;
+    left: -50%;
+    white-space: nowrap;
+}
+
+
+
+
+.infoInput .info{
+    line-height: 53px;
+    height: 53px;
+    float: left;
+    color: #CCC;
+}
+.info i{
+    padding:20px;
+    font-size:20px;
+    vertical-align: bottom;
+}
+.info input{
+    width: 250px;
+    outline: none;
+    border:none;
+}
+.info input:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;  /*去掉chrome默认input的黄色背景*/
+}  
+.hrLine{
+    margin: 0 auto;
+    height: 1px;
+    width: 310px;
+    background: #ccc;
+}
+
+
+
+.mainContent-R button{ 
+    cursor: pointer;
+    margin-top: 40px;
+    border:none;
+    height:45px;
+    width: 330px;
+    color:#fff;
+    
+    
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+   
+    background: linear-gradient(to bottom ,#B7D07D,#98BD49);/*css3渐变，有兼容性问题*/ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B7D07D', endColorstr='#98BD49',GradientType=0 );/*渐变for IE8 */
+}
+.mainContent-R button:active{
+    background: linear-gradient(to bottom ,#98BD49,#B7D07D);/*css3渐变*/
+}
+.mainContent-R button:focus {outline:none;} /*for Chrome*/
+::-moz-focus-inner {border-color: transparent;} /*for mozilla*/
+
+
+footer{
+    color: #fff;
+    margin:0 auto;
+    display: table;
+    margin-top: 1px;
+    font:normal 12px/0.9 'Microsoft YaHei','微软雅黑',sans-serif;
+}
+.ieFix{
+    color: #fff;
+    margin:0 auto;
+    display: table;
+    margin-top: 79px;
+    font:normal 12px/0.9 'Microsoft YaHei','微软雅黑',sans-serif;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 如果安装了Google chrome frame则强制用GCF来渲染，否则IE用最高版本的IE内核来渲染 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+	<title>学生选课系统 | 广东医科大学-学生选课系统-欢迎登录</title>
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_oydfsvvqbo61dcxr.css">
+
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!-- border-radius for IE8 -->
+	<script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script><!-- border-radius for IE8 -->
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="alert-danger" role="alert">
+			你的浏览器实在<strong>太太太太太太旧了</strong>，导致页面无法完美显示渲染。放学别走，升级完浏览器再说 → <a target="_blank" class="alert-danger-anchor" href="http://browsehappy.com">立即升级</a>
+		</div>
+	<![endif]-->
+	<main>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.jpg">
+			</div>
+			<div class="mainContent">
+				<div class="mainContent-L">
+					<img src="images/schoolView.jpg">
+				</div>
+				<div class="mainContent-R">
+					<h2>学生选课系统</h2>
+					<form>
+						<div class="roleOption">
+							<label for="roleOption_Stu"><input type="radio" name="roleOption" id="roleOption_Stu" checked="checked"><span>学生</span></label>
+							<label for="roleOption_Admin"><input type="radio" name="roleOption" id="roleOption_Admin"><span>管理员</span></label>
+						</div>
+						<div class="infoInput">
+							<div class="info">
+								<i class="xszhcpFont xszhcp-yonghu"></i><input type="text" name="username" placeholder="请输入账号">
+							</div>
+							<div class="wraper">
+								<div class="child hrLine"></div>
+							</div>
+							<div class="info">
+								<i class="xszhcpFont xszhcp-mima"></i><input type="password" name="password" placeholder="请输入密码">
+							</div>
+						</div>
+						<button  type="button" class="button" id="loginBtn">登录</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="ieFix">
+			<span>CopyRight © 2015-2016 By GT-FLY</span>
+		</div>
+	</footer>
+
+
+
+	<script type="text/javascript">
+		// border-radius for IE8
+		$('.button').corner();
+		$('.logo').corner();
+		$('.mainContent').corner();
+
+		// button交互
+		function login(){
+			var oBtn=document.getElementById('loginBtn');
+			oBtn.innerHTML='正在登录...';
+		}
+
+		var oBtn=document.getElementById('loginBtn');
+		oBtn.onclick=function() {
+			login();
+			$('.button').corner();
+		};
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

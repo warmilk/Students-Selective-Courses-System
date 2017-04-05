@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<link href="css/loaders.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+
+		<main>
+			<div id="jiaZaiDongHua">
+				<div class="loader">
+					<div class="semi-circle-spin">
+					  <div></div>
+					</div>
+				</div>
+				<span class="loader-text">努力加载中...</span>
+			</div>
+		</main>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			  document.querySelector('main').className += 'loaded';
+			});
+		</script>
+	</body>
+</html>
